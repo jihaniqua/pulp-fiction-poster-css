@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+/* Fonts
+---------------------------------------- */
+@font-face {
+    font-family: 'Aachen';
+    src: url('font/aachen-bold/aachenb.woff2') format('woff2'),
+         url('font/aachen-bold/aachenb.woff') format('woff');
+}
+
+/* Colors
+---------------------------------------- */
+:root {
+    --red: #BD2724;
+    --black: #16191C;
+    --orange: #E98131;
+    --yellow: #F6D535;
+    --gray: #CBCBCB;
+}
+
+/* General styles
+---------------------------------------- */
+html {
+    background-color: var(--black);
+}
+
+body {
+    background-color: var(--red);
+    height: 130vw;
+}
+
+main {
+    position: relative;
+    padding: 2vw 3vw;
+}
+
+h2 {
+    font-family: 'Seaweed Script', cursive;
+}
+
+.orange {
+    color: var(--orange);
+}
+
+/* Header
+---------------------------------------- */
+header {
+    margin-top: 2vw;
+}
+
+/* Award */
+.award {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.award h3 {
+    font-family: Aachen, Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-size: 3.3vw;
+    color: var(--black);
+    max-width: 100%;
+    margin: 0 0 -8px;
+}
+
+.award img {
+    width: 3vw;
+    height: auto;
+}
+
+/* Title */
+h1 {
+    font-family: Aachen, Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-size: 14.3vw;
+    color: var(--yellow);
+    text-shadow: 1vw 1vw 0 var(--black);
+    text-align: left;
+    margin: 0.5vw auto;
+}
+
+header h2 {
+    position: absolute;
+    font-size: 4vw;
+    top: 25vw;
+    left: 20vw;
+    margin: 0;
+}
+
+/* Coin */
+.coin {
+    position: absolute;
+    width: 12vw;
+    z-index: 10;
+}
+
+/* Background
+---------------------------------------- */
+main > img {
+    position: absolute;
+}
+main > img:nth-of-type(3) {
+    width: 100vw;
+    z-index: 1;
+    top: 20vw;
+    left: 0;
+}
+
+/* Grunge Textures */
+main > img:nth-of-type(1) {
+    width: 36.3vw;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+main > img:nth-of-type(2) {
+    width: 56.7vw;
+    z-index: 3;
+    top: 0;
+    right: 0;
+}
+
+/* Section
+---------------------------------------- */
+section {
+    position: absolute;
+    z-index: 4;
+    padding-top: 12vw;
+}
+
+section h2 {
+    font-size: 2vw;
+    margin-bottom: 0.5vw;
+}
+
+section h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.8vw;
+    font-style: italic;
+    text-decoration: underline;
+    line-height: 1.4;
+    margin: 0 0 2vw;
+}
+
+h4 {
+    font-family: Aachen, Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.8vw;
+    text-transform: uppercase;
+    color: var(--yellow);
+    margin: 0.7vw 0;
+}
+
+/* Footer
+---------------------------------------- */
+footer {
+    position: absolute;
+    z-index: 5;
+    margin: 90vw 3vw 0 0;
+}
+
+footer > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer > p {
+    font-family: 'Six Caps', sans-serif;
+    font-size: 2.5vw;
+    text-align: center;
+    color: var(--gray);
+    margin: 0 auto 1vw;
+}
+
+p em {
+    font-size: 3.5vw;
+    font-style: normal;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--red);
+}
+
+small {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2vw;
+    color: var(--gray);
+    margin: 0;
+}
+
+footer img:nth-of-type(1) {
+    height: 4vw; 
+}
+
+footer img:nth-of-type(2) {
+    height: 3vw; 
+}
